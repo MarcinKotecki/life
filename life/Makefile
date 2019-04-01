@@ -1,0 +1,5 @@
+gif: 
+	ffmpeg -i output%05d.png output.gif 
+
+main: main.c grid.c generations.c txtReader.c
+	cc main.c grid.c generations.c txtReader.c -o life.out
