@@ -17,4 +17,6 @@ void writeGridToTxt( struct Grid g, char* fileName ) {
 		
 		fprintf( f, "\n" );
 	}
+	
+	fclose(f);
 }

@@ -1,17 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "generations.h"
-#include "txtReader.h"
 #include "grid.h"
-
-void startSimulation( char* input, char* output, int generations) {
-    struct Grid g = readGridFromTxt( input );
-    for( int i = 0; i < generations; i++ ) {
-        g = nextGen( g );
-	displayGrid( g );
-    }
-}
 
 struct Grid newGrid( int width, int height ) {
     struct Grid g;
