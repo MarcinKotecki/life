@@ -11,6 +11,5 @@ struct Grid {
 
 void startSimulation( char*, char*, int );
 struct Grid newGrid( int, int );
-void displayGrid( struct Grid ); 
 
 #endif
